@@ -1,13 +1,13 @@
 pipeline {
     environment {
-        IMAGEN = "josedom24/myapp"
+        IMAGEN = "dogutate/mydogutateapp"
         USUARIO = 'USER_DOCKERHUB'
     }
     agent any
     stages {
         stage('Clone') {
             steps {
-                git branch: "main", url: 'https://github.com/josedom24/jenkins_docker.git'
+                git branch: "main", url: 'https://github.com/dogutate/jenkins_docker.git'
             }
         }
         stage('Build') {
